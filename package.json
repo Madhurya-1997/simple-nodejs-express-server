@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install && npm run build:static",
+    "build": "mkdir dist && npm install && npm run build:static",
     "build:static": "node app.js > dist/index.html",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
