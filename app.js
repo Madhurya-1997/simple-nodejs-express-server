@@ -1,6 +1,9 @@
 const express = require('express');
 const { questions, names, people } = require('./constants');
 const app = express()
+const cors = require('cors')
+
+app.use(cors());
 
 app.get('/questions', (req, res) => {
     res.send(questions);
